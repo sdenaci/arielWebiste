@@ -1,0 +1,108 @@
+* {
+  font-family: helvetica-light;
+  margin: 0;
+  background-color: #293241;
+  color: white;
+}
+
+div, nav, p, h3, ul, li {
+  background-color: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+#name{
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+  font-size: 5rem;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  font-family: raleway;
+}
+
+
+#name:hover {
+  animation: shake 0.82s ;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  margin-top: 0;
+}
+
+a:hover {
+  background-color: white;
+  color: #293241;
+}
+
+.landingSplit {
+  display: flex;
+}
+
+.landingHalf {
+  flex-basis: 50%;
+  background-color: #98C1D9;
+  color: #3D5A80;
+}
+
+.landingHalf > * {
+  padding: 1rem;
+}
+
+.landingHalf img {
+  width: 50vw;
+  padding: 0;
+  display: block;
+}
+
+.landingResearch {
+  background-color: #3D5A80;
+}
+
+.flexContainerCenter {
+  display: flex;
+  justify-content: center;
+}
+
+/*orange that looks good EE6C4D*/
+/*brighter lighterblue E0FBFC*/
+/*duller light blue 98C1D9*/
+/*darkish but not midnight #3D5A80*/

@@ -4,18 +4,25 @@ import cv from './cv.pdf'
 
 export default () =>
   <div>
-    <img src='/ariel.jpg'/>
-    <h1>Ariel Leutheusser</h1>
-    <h2>Ph.D. Candidate, Comparative Literature at CUNY Grad Center</h2>
-    <a href={cv}>Download CV</a>
-    <h3>Bio</h3>
-    <p>Ariel is the coolest grad student there is and has a ton of cool interests. They know a ton about Creative Non-Fiction and also German and French and also Truman Capote. Also cooking very chill foods.</p>
-    <h3>Research Interests</h3>
-    <ul>
-      <li>Non-Fiction</li>
-      <li>German</li>
-      <li>French</li>
-    </ul>
+    <div className='landingSplit'>
+      <div className='landingHalf'>
+        <img src='/ariel.jpg'/>
+      </div>
+      <div className='landingHalf'>
+        <h3>Bio</h3>
+        <p>Ariel is the coolest grad student there is and has a ton of cool interests. They know a ton about Creative Non-Fiction and also German a
+        nd French and also Truman Capote. Also cooking very chill foods.</p>
+      <h3>Research Interests</h3>
+      <ul>
+        <li>Non-Fiction</li>
+        <li>German</li>
+        <li>French</li>
+      </ul>
+      <div className="flexContainerCenter">
+        <a href={cv}>Download CV</a>
+      </div>
+      </div>
+    </div>
   </div>
 
 
