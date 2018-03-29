@@ -95,30 +95,26 @@ nav a:hover {
 }
 
 .landingSplit {
-  height: calc(100vh - 16rem);
   display: flex;
-  margin: 0 12rem;
+  justify-content: center;
+  background-color: #293241;
 }
 
-.landingSplit > * {
+
+.landingHalf{
+  height: calc(100vh - 20rem);
   color: #293241;
   background-color: #b5efe4;
 }
 
-.landingHalf {
-  flex-basis: 50%;
+.landingHalf img {
+  height: 100%;
 }
 
-.landingHalf > * {
-  padding: 1rem;
-}
 
-.landingSplit img {
-  width: 100%;
-  padding: 0;
-  display: block;
+#image {
+  background-color: red;
 }
-
 .landingResearch {
   background-color: #3D5A80;
 }
@@ -130,16 +126,24 @@ nav a:hover {
 
 #bio {
   padding: 2%;
-  padding-bottom: 0;
-/*  padding-top: 130px*/
+  max-width: calc(100vh - 23rem);
 }
 
-#bio ul {
-  padding-bottom: 0;
+#bio * {
+  padding: .5rem;
 }
 
+#bio li {
+  padding: 0;
+}
+
+#bio .flexContainerCenter {
+  padding: 0;
+}
 #bio a {
-/*  margin-top: 2rem;*/
+  font-size: .8rem;
+  padding: .5rem;
+  margin-bottom: 2rem;
 }
 
 #bio a:hover {
@@ -192,6 +196,7 @@ footer p {
   border: 1px white solid;
   padding: .3rem;
   border-radius: 6px;
+
 }
 
 .flexTeaching a:hover {
@@ -201,6 +206,10 @@ footer p {
 
 .teaching {
   margin: 2rem;
+}
+
+.teaching-research {
+  margin: 2rem 8rem;
 }
 /*orange that looks good EE6C4D*/
 /*brighter lighterblue E0FBFC*/

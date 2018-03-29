@@ -5,10 +5,10 @@ import cv from './cv.pdf'
 export default () =>
   <div className='verticalFlex'>
     <div className='landingSplit'>
-      <div className='landingHalf'>
+      <div className='landingHalf' id='image'>
         <img src='/ariel.jpg'/>
       </div>
-      <div className='landingHalf' >
+      <div className='landingHalf' id='bio'>
         <h3>Bio</h3>
         <p>Ariel is the coolest grad student there is and has a ton of cool interests. They know a ton about Creative Non-Fiction and also German a
         nd French and also Truman Capote. Also cooking very chill foods.</p>

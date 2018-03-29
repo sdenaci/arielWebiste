@@ -1,7 +1,7 @@
 import React from "react"
 
 export default () =>
-<div className='teaching'>
+<div className='teaching-research'>
   <div className='flexContainerCenter'>
   </div>
   <div className='flexContainer'>
