@@ -1,14 +1,29 @@
-import React from "react"
+import React from 'react'
+import cv from './cv.pdf'
 
 export default () =>
-<div>
-  <h2>Selected Courses and Syllabi</h2>
-  <p>Grappling with Environmental Destruction: A Writing Course <br></br>
+<div className='teaching'>
+  <div className='flexContainerCenter'>
+    <p className='heading'>Selected Courses and Syllabi</p>
+  </div>
+  <div className='flexTeaching'>
+  <p className='biblio'>Grappling with Environmental Destruction: A Writing Course <br></br>
   Advanced seminar in Comparative History of Ideas Program, Winter 2017</p>
-  <p>Grappling with Environmental Destruction: A Writing Course <br></br>
+  <a href={cv}>Download Syllabus</a>
+  </div>
+  <div className='flexTeaching'>
+  <p className='biblio'>Grappling with Environmental Destruction: A Writing Course <br></br>
   Advanced seminar in Comparative History of Ideas Program, Winter 2017</p>
-  <p>Grappling with Environmental Destruction: A Writing Course <br></br>
+  <a href={cv}>Download Syllabus</a>
+  </div>
+  <div className='flexTeaching'>
+  <p className='biblio'>Grappling with Environmental Destruction: A Writing Course <br></br>
   Advanced seminar in Comparative History of Ideas Program, Winter 2017</p>
-  <p>Grappling with Environmental Destruction: A Writing Course <br></br>
+  <a href={cv}>Download Syllabus</a>
+  </div>
+  <div className='flexTeaching'>
+  <p className='biblio'>Grappling with Environmental Destruction: A Writing Course <br></br>
   Advanced seminar in Comparative History of Ideas Program, Winter 2017</p>
+  <a href={cv}>Download Syllabus</a>
+  </div>
 </div>

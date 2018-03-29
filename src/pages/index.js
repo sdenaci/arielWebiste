@@ -3,24 +3,24 @@ import Link from 'gatsby-link'
 import cv from './cv.pdf'
 
 export default () =>
-  <div>
+  <div className='verticalFlex'>
     <div className='landingSplit'>
       <div className='landingHalf'>
         <img src='/ariel.jpg'/>
       </div>
-      <div className='landingHalf'>
+      <div className='landingHalf' >
         <h3>Bio</h3>
         <p>Ariel is the coolest grad student there is and has a ton of cool interests. They know a ton about Creative Non-Fiction and also German a
         nd French and also Truman Capote. Also cooking very chill foods.</p>
-      <h3>Research Interests</h3>
-      <ul>
-        <li>Non-Fiction</li>
-        <li>German</li>
-        <li>French</li>
-      </ul>
-      <div className="flexContainerCenter">
-        <a href={cv}>Download CV</a>
-      </div>
+        <h3>Research Interests</h3>
+        <ul>
+          <li>Non-Fiction</li>
+          <li>German</li>
+          <li>French</li>
+        </ul>
+        <div className='flexContainerCenter'>
+          <a href={cv}>Download CV</a>
+        </div>
       </div>
     </div>
   </div>

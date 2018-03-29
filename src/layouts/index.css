@@ -1,6 +1,8 @@
+
 * {
   font-family: helvetica-light;
   margin: 0;
+  transition: all 0.5s ease;
   background-color: #293241;
   color: white;
 }
@@ -58,37 +60,61 @@ a {
 
 nav {
   display: flex;
-  justify-content: space-between;
-  width: 80vw;
-  margin: auto;
+  justify-content: space-around;
+  margin: 0 4rem;
+  border: solid white;
+  border-width: 1px 0;
   margin-bottom: 1rem;
+}
+
+footer {
+  padding-bottom: 2rem;
+  height: 7rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+nav a {
+  background-color: inherit;
+  color: inherit
 }
 
 nav a {
   margin-top: 0;
+  font-size: 1.1rem;
 }
 
 a:hover {
-  background-color: white;
-  color: #293241;
+  border: .5px solid;
+}
+
+nav a:hover {
+  border-width: 0 1px;
 }
 
 .landingSplit {
+  height: calc(100vh - 16rem);
   display: flex;
+  margin: 0 12rem;
+}
+
+.landingSplit > * {
+  color: #293241;
+  background-color: #b5efe4;
 }
 
 .landingHalf {
   flex-basis: 50%;
-  background-color: #98C1D9;
-  color: #3D5A80;
 }
 
 .landingHalf > * {
   padding: 1rem;
 }
 
-.landingHalf img {
-  width: 50vw;
+.landingSplit img {
+  width: 100%;
   padding: 0;
   display: block;
 }
@@ -102,6 +128,80 @@ a:hover {
   justify-content: center;
 }
 
+#bio {
+  padding: 2%;
+  padding-bottom: 0;
+/*  padding-top: 130px*/
+}
+
+#bio ul {
+  padding-bottom: 0;
+}
+
+#bio a {
+/*  margin-top: 2rem;*/
+}
+
+#bio a:hover {
+  background-color: white;
+  color: #293241;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 4rem;
+}
+
+.researchBlurb {
+  flex-basis: 70%;
+  margin-left: 2rem;
+}
+
+.heading {
+  font-size: 2rem;
+  padding: .1rem;
+  border-bottom: solid .5px white;
+}
+
+footer .heading {
+  text-align: center;
+  margin: 1rem 4rem;
+}
+
+footer p {
+  text-align: center;
+}
+.biblio {
+  margin: 1rem 4rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexTeaching {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 4rem;
+    align-items: center;
+}
+
+.flexTeaching a {
+  font-size: .9rem;
+  border: 1px white solid;
+  padding: .3rem;
+  border-radius: 6px;
+}
+
+.flexTeaching a:hover {
+  background-color: #b5efe4;
+  color: #293241
+}
+
+.teaching {
+  margin: 2rem;
+}
 /*orange that looks good EE6C4D*/
 /*brighter lighterblue E0FBFC*/
 /*duller light blue 98C1D9*/
