@@ -8,6 +8,11 @@
   overflow: auto;
 }
 
+img {
+  overflow: hidden;
+  display: block;
+}
+
 div, nav, p, h3, ul, li {
   background-color: inherit;
   color: inherit;
@@ -170,6 +175,7 @@ nav a:hover {
 }
 
 .heading {
+  text-align: center;
   font-size: 2rem;
   padding: .1rem;
   border-bottom: solid .5px white;
@@ -272,6 +278,27 @@ footer p {
     margin: 2rem;
   }
 }
+
+@media (max-width: 340px) {
+    .landingHalf {
+      height: 270px;
+      width: 270px;
+    }
+    #bio {
+      font-size: .7rem;
+    }
+    #researchBlurb {
+      margin: 1rem;
+    }
+    .biblio {
+      margin: 1rem;
+      font-size: .8rem;
+    }
+    nav a {
+      font-size: .8rem;
+    }
+
+  }
 /*orange that looks good EE6C4D*/
 /*brighter lighterblue E0FBFC*/
 /*duller light blue 98C1D9*/
