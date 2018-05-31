@@ -132,6 +132,7 @@ nav a:hover {
 .flexContainerCenter {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #bio * {
@@ -165,7 +166,7 @@ nav a:hover {
 
 .researchBlurb {
   flex-basis: 70%;
-  margin-left: 2rem;
+  margin: 2rem;
 }
 
 .heading {
@@ -228,11 +229,31 @@ footer p {
   background-color: white;
 }
 
+#researchBlurb {
+  margin: 0 3rem;
+}
+
+@media (max-width: 930px) {
+  .flexTeaching {
+    margin: 0 4rem;
+  }
+}
+
 @media (max-width: 530px) {
   nav {
     margin: 0 2rem;
   }
+  .flexTeaching {
+    margin: 0;
+  }
 
+  .researchBlurb {
+    margin: .5rem 0;
+  }
+
+  .biblio {
+    font-size: .9rem;
+  }
   .heading {
     font-size: 1.5rem;
   }

@@ -4,7 +4,7 @@ export default () =>
 <div className='teaching-research'>
   <div className='flexContainerCenter'>
   </div>
-  <div className='flexContainer'>
+  <div className='flexContainerCenter' id='researchBlurb'>
     <div id='imager'/>
     <div className="researchBlurb">
       <h4>Bill Murray</h4>
