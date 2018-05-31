@@ -28,7 +28,7 @@ export default ({ children, data }) =>
         Teaching
       </Link>
     </nav>
-    <div>
+    <div className="contentDiv">
       {children()}
     </div>
     <footer>

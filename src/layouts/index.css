@@ -5,6 +5,7 @@
   transition: all 0.5s ease;
   background-color: #293241;
   color: white;
+  overflow: auto;
 }
 
 div, nav, p, h3, ul, li {
@@ -22,6 +23,9 @@ a {
   font-size: 1.3rem;
 }
 
+.contentDiv {
+  margin-bottom: 120px
+}
 #name{
   width: 80vw;
   margin: auto;
@@ -107,11 +111,14 @@ nav a:hover {
 
 
 .landingHalf{
-  height: calc(100vh - 20rem);
+  height: 400px;
+  width: 400px;
+}
+
+#bio{
   color: #293241;
   background-color: #b5efe4;
 }
-
 
 .landingHalf img {
   height: 100%;
@@ -124,14 +131,6 @@ nav a:hover {
 .flexContainerCenter {
   display: flex;
   justify-content: center;
-}
-
-#bio {
-  font-size: .9rem;
-  padding: 2%;
-  padding-top: 1%;
-  max-width: calc(100vh - 23rem);
-  margin-right: 4rem;
 }
 
 #bio * {
@@ -226,28 +225,6 @@ footer p {
   background-color: white;
 }
 
-#image {
-  margin-left: 4rem;
-}
-
-@media (max-width: 850px) {
-  .landingHalf {
-    flex-basis: 51%;
-  }
-  .landingHalf img {
-    height: 100%;
-  }
-
-  #bio, #image {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  #bio {
-    min-width: calc(100vw - 16rem);
-    padding: 0;
-  }
-}
 
 /*orange that looks good EE6C4D*/
 /*brighter lighterblue E0FBFC*/
